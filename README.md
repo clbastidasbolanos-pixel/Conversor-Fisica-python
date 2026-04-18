@@ -8,7 +8,7 @@ Proyecto desarrollado como un módulo de código libre para la conversión de un
 
 - **Proyecto:** Conversor de Unidades  
 - **Lenguaje:** Python  
-- **Repositorio:** https://github.com/xxxxx/conversor-fisica-python.git  
+- **Repositorio:** https://github.com/clbastidasbolanos-pixel/Conversor-Fisica-python  
 - **Licencia:** MIT  
 
 ---
