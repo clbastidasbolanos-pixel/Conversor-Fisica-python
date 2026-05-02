@@ -1,4 +1,7 @@
 # 🔄 Conversor de Unidades en Python
+# 🔄 Conversor de Unidades en Python
+# 🔄 Conversor de Unidades en Python
+# 🔄 Conversor de Unidades en Python
 
 Proyecto desarrollado como un módulo de código libre para la conversión de unidades de **temperatura** y **distancia**, pensado especialmente para uso académico (profesores y estudiantes de física).
 
