@@ -7,6 +7,14 @@ Proyecto desarrollado como un módulo de código libre para la conversión de un
 
 ---
 
+# 1. Onbording rápido (<15 minutos)
+
+## 1.1 Clonar repositorio
+´´´bash
+git clone https://github.com/clbastidasbolanos-pixel/Conversor-Fisica-python.git
+cd Conversor-Fisica-python
+
+
 ## 📌 Información General
 
 - **Proyecto:** Conversor de Unidades  
