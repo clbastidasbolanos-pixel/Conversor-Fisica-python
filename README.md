@@ -1,7 +1,4 @@
 # 🔄 Conversor de Unidades en Python
-# 🔄 Conversor de Unidades en Python
-# 🔄 Conversor de Unidades en Python
-# 🔄 Conversor de Unidades en Python
 
 Proyecto desarrollado como un módulo de código libre para la conversión de unidades de **temperatura** y **distancia**, pensado especialmente para uso académico (profesores y estudiantes de física).
 
@@ -83,9 +80,9 @@ Resultado: 100.00 °C equivalen a 212.00 °F
 
 ## ⚠️ Manejo de Errores
 
-El sistema valida las unidades ingresadas.
+1. El sistema valida las unidades ingresadas.
 
-Si el usuario introduce una unidad no válida, se mostrará el siguiente mensaje:
+2. Si el usuario introduce una unidad no válida, se mostrará el siguiente mensaje:
 
 ```bash
 [ALERTA] Unidad no reconocida. Usa solo C, F, KM o MI.
@@ -97,15 +94,15 @@ Si el usuario introduce una unidad no válida, se mostrará el siguiente mensaje
 
 El número de decimales mostrados en los resultados puede ser modificado directamente en el código:
 
-```python
+python:
 DECIMALES_MOSTRADOS = 2
-```
+
 
 Puedes cambiar este valor, por ejemplo:
 
-```python
+python:
 DECIMALES_MOSTRADOS = 4
-```
+
 
 Esto es útil para obtener mayor precisión en contextos como laboratorios.
 
