@@ -1,5 +1,14 @@
 # 🔄 Conversor de Unidades en Python
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white)
+![MIT License](https://img.shields.io/badge/License-MIT-22c55e?style=flat)
+![Status](https://img.shields.io/badge/Status-Activo-22c55e?style=flat)
+![Version](https://img.shields.io/badge/Version-1.0-blue?style=flat)
+![Académico](https://img.shields.io/badge/Uso-Académico-orange?style=flat)
+![Física](https://img.shields.io/badge/Área-Física-purple?style=flat)
+
 Proyecto desarrollado como un módulo de código libre para la conversión de unidades de **temperatura** y **distancia**, pensado especialmente para uso académico (profesores y estudiantes de física).
 
 ---
@@ -14,7 +23,7 @@ Proyecto desarrollado como un módulo de código libre para la conversión de un
 ---
 
 ## ⚙️ Requisitos
-
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)
 Para ejecutar este proyecto necesitas:
 
 - Python **3.10 o superior**
@@ -146,6 +155,7 @@ Proyecto desarrollado como práctica académica en programación con Python.
 ---
 
 ## 📄 Licencia
+![MIT License](https://img.shields.io/badge/License-MIT-22c55e?style=flat)
 
 Este proyecto está bajo la licencia **MIT**, lo que permite su uso, modificación y distribución libre.
 
@@ -156,7 +166,9 @@ Este proyecto está bajo la licencia **MIT**, lo que permite su uso, modificaci�
 - Proyecto ligero y fácil de usar.
 - Ideal para aprendizaje de estructuras básicas en Python.
 - No depende de librerías externas.
-## Desarrolladores 
+
+## 👨‍💻 Desarrolladores
+
 
 - EDWIN ESTEBAN ESCOBAR NACAVERA
 - CLAUDIA LORENA BASTIDAS BOLAÑOS
