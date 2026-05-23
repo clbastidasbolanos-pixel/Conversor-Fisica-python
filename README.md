@@ -156,3 +156,8 @@ Este proyecto está bajo la licencia **MIT**, lo que permite su uso, modificaci�
 - Proyecto ligero y fácil de usar.
 - Ideal para aprendizaje de estructuras básicas en Python.
 - No depende de librerías externas.
+## Desarrolladores 
+
+- EDWIN ESTEBAN ESCOBAR NACAVERA
+- CLAUDIA LORENA BASTIDAS BOLAÑOS
+- EMILIA QUINTERO LONDOÑO
