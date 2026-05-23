@@ -1,0 +1,44 @@
+@startuml diagrama_conversor
+title Diagrama de Flujo - Conversor de Unidades en Python
+skin rose
+
+start
+
+:Mostrar: Conversor de Unidades;
+
+repeat
+    :Pedir tipo_medida (temp o dist);
+    :Pedir valor_origen;
+    
+    if (¿Es número válido?) then (No)
+        :ALERTA: Valor inválido;
+    else (Sí)
+        :Pedir unidad_destino (C/F o KM/MI);
+        
+        if (tipo_medida?) then (temp)
+            if (unidad_destino?) then (F)
+                :Convertir C a F;
+            elseif (unidad_destino? es C) then (C)
+                :Convertir F a C;
+            else (otro)
+                :ALERTA: Unidad no reconocida;
+            endif
+        elseif (tipo_medida? es dist) then (dist)
+            if (unidad_destino?) then (MI)
+                :Convertir KM a MI;
+            elseif (unidad_destino? es KM) then (KM)
+                :Convertir MI a KM;
+            else (otro)
+                :ALERTA: Unidad no reconocida;
+            endif
+        else (otro)
+            :ALERTA: Tipo no reconocido;
+        endif
+        
+        :Mostrar resultado;
+    endif
+
+repeat while (¿Otra conversión? s/n) is (s) not (n)
+
+stop
+@enduml
