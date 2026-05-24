@@ -1,5 +1,14 @@
 # 🔄 Conversor de Unidades en Python
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white)
+![MIT License](https://img.shields.io/badge/License-MIT-22c55e?style=flat)
+![Status](https://img.shields.io/badge/Status-Activo-22c55e?style=flat)
+![Version](https://img.shields.io/badge/Version-1.0-blue?style=flat)
+![Académico](https://img.shields.io/badge/Uso-Académico-orange?style=flat)
+![Física](https://img.shields.io/badge/Área-Física-purple?style=flat)
+
 Proyecto desarrollado como un módulo de código libre para la conversión de unidades de **temperatura** y **distancia**, pensado especialmente para uso académico (profesores y estudiantes de física).
 
 ---
@@ -14,7 +23,7 @@ Proyecto desarrollado como un módulo de código libre para la conversión de un
 ---
 
 ## ⚙️ Requisitos
-
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=flat&logo=python&logoColor=white)
 Para ejecutar este proyecto necesitas:
 
 - Python **3.10 o superior**
@@ -24,11 +33,7 @@ Para ejecutar este proyecto necesitas:
 
 ## ▶️ Ejecución del Programa
 
-El archivo principal es:
-
-```bash
-convertidor_uni.py
-```
+El archivo principal es `convertidor_uni.py`
 
 Para ejecutarlo, usa el siguiente comando en la terminal:
 
@@ -42,9 +47,37 @@ python convertidor_uni.py
 
 El programa funciona de forma interactiva a través de la consola, solicitando información al usuario paso a paso:
 
+```mermaid
+flowchart TD
+    A([Inicio]) --> B[Mostrar: Conversor de Unidades]
+    B --> C[Pedir tipo_medida: temp o dist]
+    C --> D[Pedir valor_origen]
+    D --> E{Es numero valido?}
+    E -- No --> F[ALERTA: Valor invalido]
+    F --> C
+    E -- Si --> G[Pedir unidad_destino: C/F o KM/MI]
+    G --> H{tipo_medida?}
+    H -- temp --> I{unidad_destino?}
+    I -- F --> J[Convertir C a F]
+    I -- C --> K[Convertir F a C]
+    I -- otro --> L[ALERTA: Unidad no reconocida]
+    L --> C
+    H -- dist --> M{unidad_destino?}
+    M -- MI --> N[Convertir KM a MI]
+    M -- KM --> O[Convertir MI a KM]
+    M -- otro --> P[ALERTA: Unidad no reconocida]
+    P --> C
+    H -- otro --> Q[ALERTA: Tipo no reconocido]
+    Q --> C
+    J & K & N & O --> R[Mostrar resultado]
+    R --> S{Otra conversion? s/n}
+    S -- s --> C
+    S -- n --> T([Fin])
+```
+
 | Paso | Entrada            | Descripción |
 |------|------------------|------------|
-| 1    | `tipo_medida`     | Tipo de conversión: `temp` (temperatura) o `dist` (distancia) |
+| 1    | `tipo_medida`     | Tipo de conversión: `temp` o `dist` |
 | 2    | `valor_origen`    | Valor numérico que se desea convertir |
 | 3    | `unidad_destino`  | Unidad final según el tipo seleccionado |
 
@@ -73,7 +106,7 @@ unidad_destino: F
 **Salida:**
 
 ```bash
-Resultado: 100.00 °C equivalen a 212.00 °F
+Resultado: 100.00 C equivalen a 212.00 F
 ```
 
 ---
@@ -81,8 +114,11 @@ Resultado: 100.00 °C equivalen a 212.00 °F
 ## ⚠️ Manejo de Errores
 
 1. El sistema valida las unidades ingresadas.
+ main
 
 2. Si el usuario introduce una unidad no válida, se mostrará el siguiente mensaje:
+2. Si el usuario introduce una unidad no válida, se mostrará:
+feature/docs
 
 ```bash
 [ALERTA] Unidad no reconocida. Usa solo C, F, KM o MI.
@@ -92,28 +128,26 @@ Resultado: 100.00 °C equivalen a 212.00 °F
 
 ## 🔧 Configuración Avanzada
 
-El número de decimales mostrados en los resultados puede ser modificado directamente en el código:
+El número de decimales mostrados puede modificarse directamente en el código:
 
 python:
 DECIMALES_MOSTRADOS = 2
 
 
-Puedes cambiar este valor, por ejemplo:
+Puedes cambiarlo para mayor precisión, por ejemplo:
 
 python:
 DECIMALES_MOSTRADOS = 4
 
 
-Esto es útil para obtener mayor precisión en contextos como laboratorios.
-
 ---
 
 ## 📂 Estructura del Proyecto
 
-```bash
-📁 conversor-fisica-python
- ┣ 📄 convertidor_uni.py
- ┗ 📄 README.md
+```
+ConversorFisicaPython
+ ┣ convertidor_uni.py
+ ┗ README.md
 ```
 
 ---
@@ -125,6 +159,7 @@ Proyecto desarrollado como práctica académica en programación con Python.
 ---
 
 ## 📄 Licencia
+![MIT License](https://img.shields.io/badge/License-MIT-22c55e?style=flat)
 
 Este proyecto está bajo la licencia **MIT**, lo que permite su uso, modificación y distribución libre.
 
@@ -136,6 +171,9 @@ Este proyecto está bajo la licencia **MIT**, lo que permite su uso, modificaci�
 - Ideal para aprendizaje de estructuras básicas en Python.
 - No depende de librerías externas.
 
----
+## 👨‍💻 Desarrolladores
 
-✨ *Listo para ser usado, modificado y mejorado.*
+
+- EDWIN ESTEBAN ESCOBAR NACAVERA
+- CLAUDIA LORENA BASTIDAS BOLAÑOS
+- EMILIA QUINTERO LONDOÑO
