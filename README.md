@@ -114,7 +114,11 @@ Resultado: 100.00 C equivalen a 212.00 F
 ## ⚠️ Manejo de Errores
 
 1. El sistema valida las unidades ingresadas.
+ main
+
+2. Si el usuario introduce una unidad no válida, se mostrará el siguiente mensaje:
 2. Si el usuario introduce una unidad no válida, se mostrará:
+feature/docs
 
 ```bash
 [ALERTA] Unidad no reconocida. Usa solo C, F, KM o MI.
@@ -126,15 +130,15 @@ Resultado: 100.00 C equivalen a 212.00 F
 
 El número de decimales mostrados puede modificarse directamente en el código:
 
-```python
+python:
 DECIMALES_MOSTRADOS = 2
-```
+
 
 Puedes cambiarlo para mayor precisión, por ejemplo:
 
-```python
+python:
 DECIMALES_MOSTRADOS = 4
-```
+
 
 ---
 
